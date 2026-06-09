@@ -1,0 +1,259 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Ratan Chaurasiya",
+      "email": "ratan@example.com",
+      "phone": "+91 9876543210",
+      "password": "password123",
+      "role": "customer",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=120",
+      "subscription": "Gold Plan"
+    },
+    {
+      "id": "mech-1",
+      "name": "Rajesh Kumar",
+      "email": "rajesh@example.com",
+      "phone": "+91 9123456780",
+      "password": "password123",
+      "role": "mechanic",
+      "avatar": "https://images.unsplash.com/photo-1621574539437-4b7cb63120b8?auto=format&fit=crop&q=80&w=120",
+      "garageId": "garage-1",
+      "garageName": "Metro Auto Care"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "vehicle-1",
+      "userId": "user-1",
+      "name": "Tata Nexon EV",
+      "number": "KA-03-MM-1234",
+      "type": "Car",
+      "model": "2023",
+      "history": []
+    },
+    {
+      "id": "vehicle-2",
+      "userId": "user-1",
+      "name": "Royal Enfield Classic 350",
+      "number": "KA-51-EF-5678",
+      "type": "Bike",
+      "model": "2022",
+      "history": []
+    }
+  ],
+  "garages": [
+    {
+      "id": "garage-1",
+      "name": "Metro Auto Care",
+      "rating": 4.8,
+      "reviewsCount": 142,
+      "lat": 12.9785,
+      "lng": 77.591,
+      "mechanics": [
+        {
+          "id": "mech-1",
+          "name": "Rajesh Kumar",
+          "phone": "+91 9123456780",
+          "rating": 4.8,
+          "avatar": "https://images.unsplash.com/photo-1621574539437-4b7cb63120b8?auto=format&fit=crop&q=80&w=120",
+          "status": "available"
+        },
+        {
+          "id": "mech-2",
+          "name": "Amit Sharma",
+          "phone": "+91 9123456781",
+          "rating": 4.7,
+          "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&q=80&w=120",
+          "status": "available"
+        }
+      ],
+      "services": [
+        "Engine",
+        "Puncture",
+        "Battery",
+        "Towing",
+        "Brakes"
+      ],
+      "image": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+      "id": "garage-2",
+      "name": "Highway Rescue Garage",
+      "rating": 4.5,
+      "reviewsCount": 89,
+      "lat": 12.9645,
+      "lng": 77.576,
+      "mechanics": [
+        {
+          "id": "mech-3",
+          "name": "Vikram Singh",
+          "phone": "+91 9123456782",
+          "rating": 4.5,
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120",
+          "status": "available"
+        }
+      ],
+      "services": [
+        "Puncture",
+        "Towing",
+        "Brakes"
+      ],
+      "image": "https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+      "id": "garage-3",
+      "name": "Elite Motors & Spares",
+      "rating": 4.9,
+      "reviewsCount": 210,
+      "lat": 12.989,
+      "lng": 77.615,
+      "mechanics": [
+        {
+          "id": "mech-4",
+          "name": "Sanjay Verma",
+          "phone": "+91 9123456783",
+          "rating": 4.9,
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=120",
+          "status": "available"
+        },
+        {
+          "id": "mech-5",
+          "name": "Rahul Rao",
+          "phone": "+91 9123456784",
+          "rating": 4.8,
+          "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=120",
+          "status": "available"
+        }
+      ],
+      "services": [
+        "Engine",
+        "Electrical",
+        "AC Repair",
+        "Battery"
+      ],
+      "image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=400"
+    }
+  ],
+  "activeRequests": [
+    {
+      "id": "req-1780851827166",
+      "userId": "user-1",
+      "vehicleId": "custom",
+      "vehicleName": "Black Other Royal Enfield Classic 350 (Petrol) [Reg: KA-51-EF-5678]",
+      "vehicleCategory": "Bike",
+      "vehicleType": "Bike",
+      "vehicleBrand": "Other",
+      "vehicleModel": "Royal Enfield Classic 350",
+      "vehicleNumber": "KA-51-EF-5678",
+      "problemType": "Engine Problem [Service Class: Rapid two-wheeler Mechanic]",
+      "description": "",
+      "image": null,
+      "customerLat": 12.9716,
+      "customerLng": 77.5946,
+      "garageId": "garage-1",
+      "garageName": "Metro Auto Care",
+      "status": "pending",
+      "mechanic": null,
+      "items": [],
+      "total": 0,
+      "discount": 0,
+      "finalAmount": 0,
+      "paymentMethod": null,
+      "paymentStatus": "unpaid",
+      "createdAt": "2026-06-07T17:03:47.166Z"
+    }
+  ],
+  "serviceHistory": [
+    {
+      "id": "req-old-1",
+      "userId": "user-1",
+      "vehicleName": "Tata Nexon EV",
+      "problemType": "Flat Tyre",
+      "garageName": "Metro Auto Care",
+      "mechanicName": "Rajesh Kumar",
+      "date": "2026-05-15",
+      "items": [
+        {
+          "name": "Tyre Puncture Repair",
+          "cost": 300
+        },
+        {
+          "name": "Labour Charge",
+          "cost": 200
+        }
+      ],
+      "total": 500,
+      "discount": 50,
+      "finalAmount": 450,
+      "paymentMethod": "UPI",
+      "status": "completed",
+      "rating": 5,
+      "review": "Fast repair, puncture was patched in 10 minutes!"
+    },
+    {
+      "id": "req-old-2",
+      "userId": "user-1",
+      "vehicleName": "Royal Enfield Classic 350",
+      "problemType": "Battery Dead",
+      "garageName": "Elite Motors & Spares",
+      "mechanicName": "Sanjay Verma",
+      "date": "2026-04-10",
+      "items": [
+        {
+          "name": "Exide Battery Replacement",
+          "cost": 2200
+        },
+        {
+          "name": "Labour Charge",
+          "cost": 300
+        }
+      ],
+      "total": 2500,
+      "discount": 250,
+      "finalAmount": 2250,
+      "paymentMethod": "Credit Card",
+      "status": "completed",
+      "rating": 4,
+      "review": "A bit expensive, but original parts used and battery operates well."
+    }
+  ],
+  "promoCodes": [
+    {
+      "code": "AUTORESCUE10",
+      "discount": 100,
+      "type": "fixed"
+    },
+    {
+      "code": "FIRSTFREE",
+      "discount": 200,
+      "type": "fixed"
+    },
+    {
+      "code": "GOLDMEMBER",
+      "discount": 150,
+      "type": "fixed"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "ticket-1",
+      "userName": "Ratan Chaurasiya",
+      "mechanicName": "Amit Sharma",
+      "subject": "Delay in Arrival",
+      "details": "Mechanic took 45 minutes to arrive instead of the estimated 15 minutes.",
+      "status": "resolved",
+      "date": "2026-05-20"
+    }
+  ],
+  "geofenceLogs": [
+    {
+      "id": "geo-1780850934421",
+      "requestId": "req-1780712261235",
+      "type": "enter",
+      "time": "10:18:54 pm",
+      "message": "Mechanic entered the 100m client service zone."
+    }
+  ],
+  "notifications": []
+}
